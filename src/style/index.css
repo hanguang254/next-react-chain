@@ -1,3 +1,26 @@
 #{
     margin: 0;
+    padding: 0;
+}
+
+.airdrop-body{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 80px;
+    width: 800px;
+    height: 600px;
+    border-radius: 20px;
+    background:  rgb(6, 8, 24);
+    border: 3px solid ;
+    border-color:  rgb(156, 81, 255);
+
+}
+.title-drop{
+    padding-top: 40px;
+    background-image: linear-gradient(270deg, rgb(156, 81, 255) 0%, rgb(85, 161, 255) 50%, rgb(156, 81, 255) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
 }

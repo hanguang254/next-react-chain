@@ -13,10 +13,11 @@ import { publicProvider } from 'wagmi/providers/public';
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 
 
+//组件
 
 // css样式
 import "../style/navbar.css"
-
+import '../style/index.css'
 
 const { chains, publicClient } = configureChains(
     [zkSync],
@@ -49,9 +50,8 @@ export default function MyApp({ Component, pageProps }) {
             accentColorForeground:'black'
           })}
           initialChain={zkSync}>
-
           <Layout>
-              <Component {...pageProps} />
+            <Component {...pageProps} />
           </Layout>
 
         </RainbowKitProvider>
