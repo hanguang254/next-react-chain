@@ -5,10 +5,40 @@ import Button from '@mui/material/Button';
 //css
 
 //hooks
-
+import { Web3 } from 'web3';
+import {ethers} from 'ethers';
+import { useNetwork,useAccount } from 'wagmi'
+import { useEffect } from 'react';
 
 export default function Home(){
+    const { chain } = useNetwork()
+    const {address, isConnecting, isDisconnected} = useAccount()
+    console.log(address, isConnecting, isDisconnected)
 
+    
+    async function switchToEthereum() {
+        try {
+            if(chain.id !==324)  {
+                await window.ethereum.request({
+                method: "wallet_switchEthereumChain",
+                params: [
+                    {
+                        chainId: "0x144"
+                    }
+                    ]
+                });
+            }
+        
+        } catch (error) {
+            console.log(error);
+        }
+     }
+
+    useEffect(() => {
+        
+        switchToEthereum();
+    },[])
+    
 
     return (
         <Container maxWidth="false" sx={{

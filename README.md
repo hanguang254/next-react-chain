@@ -25,9 +25,14 @@ npm install @rainbow-me/rainbowkit wagmi viem
         return config;
     },
 ```
-
-
-
+## web3库
+```
+    npm install --save ethers
+    ```
+    npm i wagmi viem
+    ```
+    npm install web3
+```
 
 ## 样式安装 [UI组件](https://mui.com/material-ui/getting-started/installation/)
 

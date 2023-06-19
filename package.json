@@ -16,6 +16,7 @@
     "autoprefixer": "10.4.14",
     "eslint": "8.42.0",
     "eslint-config-next": "13.4.5",
+    "ethers": "^6.6.0",
     "lodash.merge": "^4.6.2",
     "net": "^1.0.2",
     "next": "^13.4.5",
@@ -25,7 +26,8 @@
     "tailwindcss": "^3.3.2",
     "tls": "^0.0.1",
     "viem": "^1.0.7",
-    "wagmi": "^1.2.0"
+    "wagmi": "^1.2.0",
+    "web3": "^4.0.1"
   },
   "devDependencies": {
     "webpack-cli": "^5.1.4"
