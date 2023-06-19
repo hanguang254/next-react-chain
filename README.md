@@ -16,12 +16,15 @@ npm install @rainbow-me/rainbowkit wagmi viem
 
 ## 配置fs
 放入 next.config.js
-webpack5: true,
-webpack: (config) => {
-    config.resolve.fallback = { fs: false };
+{
+    webpack5: true,
+    webpack: (config) => {
+        config.resolve.fallback = { fs: false };
 
-    return config;
-},
+        return config;
+    },
+}
+
 
 
 ## 样式安装 [UI组件](https://mui.com/material-ui/getting-started/installation/)
