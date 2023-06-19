@@ -16,14 +16,16 @@ npm install @rainbow-me/rainbowkit wagmi viem
 
 ## 配置fs
 放入 next.config.js
-{
+
+`
     webpack5: true,
     webpack: (config) => {
         config.resolve.fallback = { fs: false };
 
         return config;
     },
-}
+`
+
 
 
 
