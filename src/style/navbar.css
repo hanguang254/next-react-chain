@@ -8,6 +8,7 @@
 }
 .navbarlogo {
     margin-right: auto; /* 图标logo靠左 */
+    margin-left: 20px;
 }
 
 .link-router {
@@ -27,4 +28,5 @@
   
   .wallet {
     margin-left: auto; /* 让钱包靠右 */
+    margin-right: 20px;
   }
