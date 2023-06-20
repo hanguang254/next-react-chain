@@ -10,7 +10,7 @@
     background:  rgb(6, 8, 24);
     border: 3px solid ;
     border-color:  rgb(156, 81, 255);
-
+    
 }
 .title-drop{
     padding-top: 40px;
@@ -19,4 +19,8 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+}
+
+.button-body > button{
+    border-radius: 20px;
 }
