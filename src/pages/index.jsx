@@ -15,6 +15,7 @@ export default function Home(){
     const [Network, setNetwork] = useState(true);
 
     
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     async function switchTozksync() {
         try {
             if(chain.id !==324)  {
@@ -44,7 +45,9 @@ export default function Home(){
     }, [])
 
     useEffect(() => {
+        
         switchTozksync();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [Network])
     
 
