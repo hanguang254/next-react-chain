@@ -15,40 +15,32 @@ export default function Home(){
     const [Network, setNetwork] = useState(true);
 
     
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    async function switchTozksync() {
+    async function switchToZkSync() {
         try {
-            if(chain.id !==324)  {
-                await window.ethereum.request({
-                method: "wallet_switchEthereumChain",
-                params: [
-                    {
-                        chainId: "0x144"
-                    }
-                    ]
-                });
-            }
-        
+          if (chain.id !== 324) {
+            await window.ethereum.request({
+              method: 'wallet_switchEthereumChain',
+              params: [{ chainId: '0x144' }],
+            });
+          }
         } catch (error) {
-            console.log(error);
+          console.log(error);
         }
         setNetwork(true);
-     }
+      }
     
-
-    useEffect(() => {
+      useEffect(() => {
         async function handleNetworkChange() {
-            setNetwork(false)
+            setNetwork(false);
         }
-        //对象监听了以太坊网络的切换事件
-        window.ethereum.on('chainChanged', handleNetworkChange)
-    }, [])
-
-    useEffect(() => {
-        
-        switchTozksync();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [Network])
+        window.ethereum.on('chainChanged', handleNetworkChange);
+    
+      }, [chain]);
+    
+      useEffect(() => {
+            switchToZkSync();
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+      }, [Network]); // 只在组件挂载时调用一次
     
 
     return (
