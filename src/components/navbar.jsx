@@ -15,15 +15,18 @@ export default function Navbar() {
                 alignItems: 'center',
                 height:'60px'
             }}>
-                <Box className='navbarlogo'>
-                    <Avatar alt="Remy Sharp" 
-                    src="https://www.rainbowkit.com/rainbow.svg" 
-                    variant='square'
-                    sx={{
-                        borderRadius:'10px',
-                    }}
-                    />
-                </Box>
+                <Link href='/'>
+                    <Box className='navbarlogo'>
+                        <Avatar alt="Remy Sharp" 
+                        src="https://www.rainbowkit.com/rainbow.svg" 
+                        variant='square'
+                        sx={{
+                            borderRadius:'10px',
+                        }}
+                        />
+                    </Box>
+                </Link>
+                
                 <Box className='link-router'>
                     <Box>
                         <Link href="/">Airdrop</Link>
