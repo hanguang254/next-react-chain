@@ -1,0 +1,9 @@
+.app-navbar{
+    background-color: #252954;
+    height: 60px;
+}
+
+.app-link-router a{
+    color: white;
+    text-decoration: none; 
+}

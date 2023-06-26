@@ -12,12 +12,16 @@ import { alchemyProvider } from 'wagmi/providers/alchemy';
 import { publicProvider } from 'wagmi/providers/public';
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 
-
 //组件
+import { useState, useEffect } from "react";
+import AppNavbar from '../components/App/AppNavbar';
+import Navbar from '../components/navbar'
+
 
 // css样式
 import "../style/navbar.css"
 import '../style/index.css'
+import '../style/AppNavbar.css'
 
 const { chains, publicClient } = configureChains(
     [zkSync],
@@ -42,6 +46,19 @@ const { chains, publicClient } = configureChains(
 
 
 export default function MyApp({ Component, pageProps }) {
+  const walletName = 'Wallet';
+
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    function handleResize() {
+      setIsSmallScreen(window.innerWidth < 800);
+    }
+    window.addEventListener("resize", handleResize);
+    handleResize(); // 初始化检查一次
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <WagmiConfig config={wagmiConfig}>
         <RainbowKitProvider 
@@ -50,10 +67,11 @@ export default function MyApp({ Component, pageProps }) {
             accentColorForeground:'black'
           })}
           initialChain={zkSync}>
+          {isSmallScreen ? <AppNavbar walletName={walletName} /> :<Navbar /> }
           <Layout>
             <Component {...pageProps} />
           </Layout>
-
+          {/* footer */}
         </RainbowKitProvider>
     </WagmiConfig>
     
