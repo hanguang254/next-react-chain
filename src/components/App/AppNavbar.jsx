@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Box from '@mui/material/Box';
 import Avatar from '@mui/material/Avatar';
 
-// css
+
 
 
 export default function AppNavbar(props){
@@ -33,7 +33,7 @@ export default function AppNavbar(props){
                 <Box>
                     <Link href="/">Airdrop</Link>
                     <Link href="/pagetwo">IDO</Link>
-                    <Link href='/'>3</Link>
+                    <Link href='/'>POOL</Link>
                 </Box>  
             </Box>
             <Box className='app-wallet' >
