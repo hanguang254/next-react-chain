@@ -65,11 +65,12 @@ export default function Home(){
     
 
     return (
-        <Container maxWidth="false" sx={{
+        <Container sx={{
             display: 'flex',
             justifyContent: 'center',
+            alignItems: 'center', // 添加此行以使内容居中
+            height: '100vh', // 使用视口高度作为容器高
           }} disableGutters>
-            
             <Box className="airdrop-body">
                 <Box sx={{
                     width:'100%',
@@ -96,6 +97,7 @@ export default function Home(){
                     </Box>
                 </Box>
             </Box>
+          
         </Container>
                     
     )

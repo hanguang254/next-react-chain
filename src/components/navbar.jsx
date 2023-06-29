@@ -31,7 +31,7 @@ export default function Navbar() {
                     <Box>
                         <Link href="/">Airdrop</Link>
                         <Link href="/pagetwo">IDO</Link>
-                        <Link href='/'>3</Link>
+                        <Link href='/'>POOL</Link>
                     </Box>  
                 </Box>
                 <Box className='wallet' >
