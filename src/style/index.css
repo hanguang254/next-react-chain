@@ -5,12 +5,13 @@
     /* align-items: center; */
     margin-top: 80px;
     width: 800px;
-    height: 600px;
+    height: 500px;
     border-radius: 20px;
     background:  rgb(6, 8, 24);
     border: 3px solid ;
     border-color:  rgb(156, 81, 255);
-    
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .title-drop{
     padding-top: 40px;
