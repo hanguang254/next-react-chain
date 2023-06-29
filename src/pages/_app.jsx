@@ -53,7 +53,7 @@ export default function MyApp({ Component, pageProps }) {
 
   useEffect(() => {
     function handleResize() {
-      setIsSmallScreen(window.innerWidth < 800);
+      setIsSmallScreen(window.innerWidth < 844);
     }
     window.addEventListener("resize", handleResize);
     handleResize(); // 初始化检查一次
