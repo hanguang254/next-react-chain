@@ -13,7 +13,7 @@ export default function Navbar() {
             <Box sx={{
                 display: 'flex',
                 alignItems: 'center',
-                height:'55px'
+                height:'8vh'
             }}>
                 <Link href='/'>
                     <Box className='navbarlogo'>
