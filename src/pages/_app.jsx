@@ -1,4 +1,4 @@
-import Layout from '../components/layout'
+import Layout from './layout'
 
 import '@rainbow-me/rainbowkit/styles.css';
 import {
