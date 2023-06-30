@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Airdrop from './index.jsx'
+
 class ErrorBoundary extends React.Component {
     constructor(props) {
       super(props)
@@ -20,17 +22,7 @@ class ErrorBoundary extends React.Component {
       // Check if the error is thrown
       if (this.state.hasError) {
         // You can render any custom fallback UI
-        return (
-          <div>
-            <h2>Oops, there is an error!</h2>
-            <button
-              type="button"
-              onClick={() => this.setState({ hasError: false })}
-            >
-              Try again?
-            </button>
-          </div>
-        )
+        return <Airdrop />
       }
    
       // Return children components in case of no error
