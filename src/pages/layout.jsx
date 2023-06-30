@@ -25,7 +25,12 @@ export default function Layout({ children }) {
     return (
       <>
           {isSmallScreen ? <AppNavbar walletName={walletName} /> :<Navbar /> }
-          <main>{children}</main>
+          <main style={{
+            backgroundImage: 'url("https://react.4everland.store/exported%20(1).jpg")',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+          }}>{children}</main>
       </>
     )
   }
