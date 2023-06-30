@@ -18,10 +18,13 @@ npm install @rainbow-me/rainbowkit wagmi viem
 放入 next.config.js
 
 ```
-    webpack5: true,
-    webpack: (config) => {
-        config.resolve.fallback = { fs: false };
-
+    安装配置
+    npm install buffer crypto-browserify stream-browserify
+```
+```
+    reactStrictMode: true,
+    webpack: config => {
+        config.resolve.fallback = { fs: false, net: false, tls: false };
         return config;
     },
 ```

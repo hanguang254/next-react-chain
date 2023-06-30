@@ -22,13 +22,13 @@ import '../style/layout.css'
 const { chains, publicClient } = configureChains(
     [zkSync],
     [
-    //   alchemyProvider({ apiKey: process.env.ALCHEMY_ID }),
+      // alchemyProvider({ apiKey: process.env.ALCHEMY_ID }),
       publicProvider()
     ]
   );
   
   const { connectors } = getDefaultWallets({
-    appName: 'My RainbowKit App',
+    appName: 'POOL',
     projectId: 'YOUR_PROJECT_ID',
     chains
   });
@@ -52,9 +52,7 @@ export default function MyApp({ Component, pageProps }) {
           })}
           initialChain={zkSync}>
           <Layout>
-            
               <Component {...pageProps} />
-            
           </Layout>
         </RainbowKitProvider>
     </WagmiConfig>
