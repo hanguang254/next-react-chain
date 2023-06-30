@@ -54,7 +54,7 @@ export default function Home(){
         async function handleNetworkChange() {
             setNetwork(false);
         }
-        window.ethereum.on('chainChanged', handleNetworkChange);
+        // window.ethereum.on('chainChanged', handleNetworkChange);
     
       }, [chain]);
     

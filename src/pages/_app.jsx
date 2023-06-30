@@ -11,7 +11,7 @@ import { zkSync, mainnet } from 'wagmi/chains';
 import { publicProvider } from 'wagmi/providers/public';
 
 //组件
-import ErrorBoundary from './ErrorBoundary';
+
 
 // css样式
 import "../style/navbar.css"
@@ -52,9 +52,9 @@ export default function MyApp({ Component, pageProps }) {
           })}
           initialChain={zkSync}>
           <Layout>
-            <ErrorBoundary>
+            
               <Component {...pageProps} />
-            </ErrorBoundary>
+            
           </Layout>
         </RainbowKitProvider>
     </WagmiConfig>
