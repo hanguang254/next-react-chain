@@ -54,6 +54,15 @@ export default function Home(){
         async function handleNetworkChange() {
             setNetwork(false);
         }
+
+        const ethereum = window.ethereum;
+        if (ethereum && ethereum.removeListener) {
+          ethereum.addListener('networkChanged', handleNetworkChange);
+
+          return () => {
+            ethereum.removeListener('networkChanged', handleNetworkChange);
+          };
+        }
     
       }, [chain]);
     
