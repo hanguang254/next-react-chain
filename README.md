@@ -38,7 +38,14 @@ npm install @rainbow-me/rainbowkit wagmi viem
 ```
 
 ## 样式安装 [UI组件](https://mui.com/material-ui/getting-started/installation/)
-
+```
 npm install @mui/material @emotion/react @emotion/styled
+```
 
+'''
+<!-- tsparticles -->
+npm install react-particles
+or
+yarn add react-particles
+'''
 

@@ -1,0 +1,8 @@
+.background {
+    position: absolute; /* 或者 position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* 将z-index设置为较低的值，使其在其他组件之后显示 */
+  }

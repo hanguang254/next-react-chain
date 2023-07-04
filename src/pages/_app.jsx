@@ -11,9 +11,10 @@ import { zkSync, mainnet } from 'wagmi/chains';
 import { publicProvider } from 'wagmi/providers/public';
 
 //组件
-
-
+import Background from './background'
+import Box from '@mui/material/Box';
 // css样式
+import '../style/background.css'
 import "../style/navbar.css"
 import '../style/index.css'
 import '../style/AppNavbar.css'
@@ -44,6 +45,8 @@ const { chains, publicClient } = configureChains(
 export default function MyApp({ Component, pageProps }) {
 
   return (
+    
+      
     <WagmiConfig config={wagmiConfig}>
         <RainbowKitProvider 
           chains={chains} theme={darkTheme({
@@ -51,8 +54,12 @@ export default function MyApp({ Component, pageProps }) {
             accentColorForeground:'black'
           })}
           initialChain={zkSync}>
+          {/* tsparticles background */}
+          <Box className="background">
+            <Background />
+          </Box>
           <Layout>
-              <Component {...pageProps} />
+            <Component {...pageProps} />
           </Layout>
         </RainbowKitProvider>
     </WagmiConfig>
