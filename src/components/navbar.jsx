@@ -18,7 +18,7 @@ export default function Navbar() {
                 <Link href='/'>
                     <Box className='navbarlogo'>
                         <Avatar alt="Remy Sharp" 
-                        src="https://www.rainbowkit.com/rainbow.svg" 
+                        src="/StarPrizePool.png" 
                         variant='square'
                         sx={{
                             borderRadius:'10px',
@@ -31,7 +31,7 @@ export default function Navbar() {
                     <Box>
                         <Link href="/">Airdrop</Link>
                         <Link href="/pagetwo">IDO</Link>
-                        <Link href='/'>POOL</Link>
+                        <Link href='/pagethree'>POOL</Link>
                     </Box>  
                 </Box>
                 <Box className='wallet' >

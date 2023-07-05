@@ -5,10 +5,9 @@ import Container from '@mui/material/Container';
 
 
 import { useEffect,useState } from 'react';
-
 import AppNavbar from '../components/App/AppNavbar';
 import Navbar from '../components/navbar'
-import Background from '../components/background'
+
 
 export default function Layout({ children }) {
 

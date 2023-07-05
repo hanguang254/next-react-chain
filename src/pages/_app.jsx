@@ -13,6 +13,8 @@ import { publicProvider } from 'wagmi/providers/public';
 //组件
 import Background from '../components/background'
 import Box from '@mui/material/Box';
+import Head from 'next/head';
+
 // css样式
 import '../style/background.css'
 import "../style/navbar.css"
@@ -47,7 +49,6 @@ export default function MyApp({ Component, pageProps }) {
   
   return (
     
-      
     <WagmiConfig config={wagmiConfig}>
         <RainbowKitProvider 
           chains={chains} theme={darkTheme({
@@ -55,6 +56,9 @@ export default function MyApp({ Component, pageProps }) {
             accentColorForeground:'black'
           })}
           initialChain={zkSync}>
+          <Head>
+            <link rel="icon" type="image/x-icon" href="/StarPrizePool.png" /> 
+          </Head>  
           {/* tsparticles background */}
           <Box className="background">
             <Background />

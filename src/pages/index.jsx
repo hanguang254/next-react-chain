@@ -6,12 +6,12 @@ import LoadingButton from '@mui/lab/LoadingButton';
 //css
 
 //hooks
-import { Web3 } from 'web3';
-import {ethers} from 'ethers';
 import { useNetwork,useContractWrite } from 'wagmi'
 import { useEffect,useState } from 'react';
 
 import ABI from '../abi/mint.json';
+
+
 
 export default function Home(){
     const { chain } = useNetwork()
