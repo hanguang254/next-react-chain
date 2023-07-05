@@ -48,21 +48,21 @@ export default function App()  {
                             quantity: 4,
                         },
                         repulse: {
-                            distance: 200,
+                            distance: 100,
                             duration: 0.4,
                         },
                     },
                 },
                 particles: {
                     color: {
-                        value: "#ffffff",
+                        value: "#00e5ff",
                     },
                     links: {
-                        color: "#ffffff",
+                        color: "#212121",
                         distance: 150,
                         enable: true,
                         opacity: 0.5,
-                        width: 1,
+                        width: 2,
                     },
                     collisions: {
                         enable: true,
@@ -74,7 +74,7 @@ export default function App()  {
                             default: "bounce",
                         },
                         random: false,
-                        speed: 6,
+                        speed: 4,
                         straight: false,
                     },
                     number: {
@@ -82,7 +82,7 @@ export default function App()  {
                             enable: true,
                             area: 800,
                         },
-                        value: 80,
+                        value: 150,
                     },
                     opacity: {
                         value: 0.5,
