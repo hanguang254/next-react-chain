@@ -11,7 +11,7 @@ import { zkSync, mainnet } from 'wagmi/chains';
 import { publicProvider } from 'wagmi/providers/public';
 
 //组件
-import Background from './background'
+import Background from '../components/background'
 import Box from '@mui/material/Box';
 // css样式
 import '../style/background.css'

@@ -8,7 +8,7 @@ import { useEffect,useState } from 'react';
 
 import AppNavbar from '../components/App/AppNavbar';
 import Navbar from '../components/navbar'
-import Background from './background'
+import Background from '../components/background'
 
 export default function Layout({ children }) {
 
@@ -25,15 +25,8 @@ export default function Layout({ children }) {
   }, []);
   
     return (
-      <>  
-          
+      <>    
           {isSmallScreen ? <AppNavbar walletName={walletName} /> :<Navbar /> }
-          {/* <main style={{
-            backgroundImage: 'url("https://react.4everland.store/exported%20(1).jpg")',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-          }}>{children}</main> */}
           <main>
             {children}
           </main>

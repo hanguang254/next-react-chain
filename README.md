@@ -47,5 +47,7 @@ npm install @mui/material @emotion/react @emotion/styled
 npm install react-particles
 or
 yarn add react-particles
+
+需要手动在package.json中手动添加tsparticles包
 '''
 
