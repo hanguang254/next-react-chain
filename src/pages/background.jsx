@@ -28,8 +28,7 @@ export default function App()  {
                         value: "#0d47a1",
                     },
                     image: "url('https://react.4everland.store/exported%20(1).jpg')",
-                    repeat: "no-repeat",
-                    size:"100%",
+                    size:"cover",
                 },
                 fpsLimit: 120,
                 interactivity: {
