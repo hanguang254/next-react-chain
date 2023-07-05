@@ -27,7 +27,9 @@ export default function App()  {
                     color: {
                         value: "#0d47a1",
                     },
-                    image: "url('https://react.4everland.store/exported%20(1).jpg')"
+                    image: "url('https://react.4everland.store/exported%20(1).jpg')",
+                    repeat: "no-repeat",
+                    size:"100%",
                 },
                 fpsLimit: 120,
                 interactivity: {
