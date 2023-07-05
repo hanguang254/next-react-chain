@@ -4,6 +4,7 @@ import { loadFull } from "tsparticles";
 
 
 
+
 export default function App()  {
     const particlesInit = useCallback(async engine => {
         console.log(engine);
@@ -27,7 +28,7 @@ export default function App()  {
                     color: {
                         value: "#0d47a1",
                     },
-                    image: "url('https://react.4everland.store/exported%20(1).jpg')",
+                    image: "url('/background.jpg')",
                     size:"cover",
                 },
                 fpsLimit: 120,
@@ -45,7 +46,7 @@ export default function App()  {
                     },
                     modes: {
                         push: {
-                            quantity: 4,
+                            quantity: 1,
                         },
                         repulse: {
                             distance: 100,

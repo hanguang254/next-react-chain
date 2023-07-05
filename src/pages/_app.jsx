@@ -20,6 +20,7 @@ import '../style/index.css'
 import '../style/AppNavbar.css'
 import '../style/layout.css'
 
+
 const { chains, publicClient } = configureChains(
     [zkSync],
     [
@@ -43,7 +44,7 @@ const { chains, publicClient } = configureChains(
 
 
 export default function MyApp({ Component, pageProps }) {
-
+  
   return (
     
       
