@@ -42,12 +42,13 @@ npm install @rainbow-me/rainbowkit wagmi viem
 npm install @mui/material @emotion/react @emotion/styled
 ```
 
-'''
+```
 <!-- tsparticles -->
 npm install react-particles
 or
+```
 yarn add react-particles
-
+```
 需要手动在package.json中手动添加tsparticles包
-'''
+
 
