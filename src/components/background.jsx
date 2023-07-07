@@ -28,7 +28,8 @@ export default function App()  {
                     color: {
                         value: "#0d47a1",
                     },
-                    image: "url('/background.jpg')",
+                    image: "url('/background.png')",
+                    repeat: "no-repeat",
                     size:"cover",
                 },
                 fpsLimit: 120,

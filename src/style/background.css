@@ -6,7 +6,7 @@
     height: 100%;
     z-index: -1; /* 将z-index设置为较低的值，使其在其他组件之后显示 */
 
-    background-image: url('/background.jpg');
+    background-image: url('/background.png');
     background-repeat: no-repeat;
     background-size: cover;
   }
