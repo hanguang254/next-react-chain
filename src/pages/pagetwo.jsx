@@ -44,10 +44,7 @@ export default function Pagetwo(){
             alignItems: 'center',
             height: '92vh'
         }}>
-            <Box className='IDO-body' sx={{
-                width:'100%',
-                height:'100%',
-            }}>
+            <Box className='IDO-body'>
                 <Box sx={{ 
                     display: 'flex',
                     flexDirection: 'column',
