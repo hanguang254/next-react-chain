@@ -22,6 +22,8 @@ import '../style/index.css'
 import '../style/AppNavbar.css'
 import '../style/layout.css'
 
+import './style/pagetwo.css'
+
 
 const { chains, publicClient } = configureChains(
     [zkSync],

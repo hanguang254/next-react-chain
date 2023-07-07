@@ -1,0 +1,22 @@
+.IDO-body{
+    width: 800px;
+    height: 500px;
+    border-radius: 20px;
+    background:  rgb(231, 233, 248);
+    border: 3px solid ;
+    border-color:  rgb(156, 81, 255);
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+.ido-title{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(156, 81, 255);
+    text-align: center;
+    margin-top: 20px;
+}
+h4{
+    color: rgb(99, 163, 34);
+    margin: 10px;
+}
