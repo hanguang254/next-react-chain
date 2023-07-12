@@ -24,7 +24,7 @@ export default function Layout({ children }) {
   }, []);
   
     return (
-      <Container maxWidth='false' disableGutters sx={{height:'100vh'}}>    
+      <Container maxWidth='false' disableGutters>    
           {isSmallScreen ? <AppNavbar walletName={walletName} /> :<Navbar /> }
           <main>{children}</main>
       </Container>
