@@ -9,11 +9,11 @@ import Avatar from '@mui/material/Avatar';
 
 export default function Navbar() {
     return(
-        <Box className='navbar'>
+        <Box className='navbar' sx={{marginBottom:'100px'}}>
             <Box sx={{
                 display: 'flex',
                 alignItems: 'center',
-                height:'8vh'
+                height:'60px'
             }}>
                 <Link href='/'>
                     <Box className='navbarlogo'>

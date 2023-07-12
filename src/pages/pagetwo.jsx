@@ -38,11 +38,11 @@ export default function Pagetwo(){
 
 
     return(
-        <Container disableGutters sx={{
+        <Container maxWidth='false' disableGutters sx={{
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            height: '92vh'
+            height: '100%'
         }}>
             <Box className='IDO-body'>
                 <Box sx={{ 
