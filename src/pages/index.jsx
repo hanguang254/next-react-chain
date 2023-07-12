@@ -78,6 +78,8 @@ export default function Home(){
             justifyContent: 'center',
             alignItems: 'center', // 添加此行以使内容居中
             height: '100%', // 使用视口高度作为容器高
+            marginTop:'100px',
+            marginBottom:'100px'
           }} disableGutters>
             <Box className="airdrop-body">
                 <Box sx={{

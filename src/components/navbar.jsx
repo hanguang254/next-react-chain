@@ -9,7 +9,7 @@ import Avatar from '@mui/material/Avatar';
 
 export default function Navbar() {
     return(
-        <Box className='navbar' sx={{marginBottom:'100px'}}>
+        <Box className='navbar'>
             <Box sx={{
                 display: 'flex',
                 alignItems: 'center',
